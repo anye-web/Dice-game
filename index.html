@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Coaster</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="" class="logo" />
+    </nav>
+
+    <main class="main-content">
+      <!-- Headings  -->
+      <h1 class="heading-primary">Welcome to dice coaster</h1>
+      <h1 class="heading-winner hidden">John Won !!! 🏆</h1>
+      <h3 class="heading-secondary">Choose your opponent</h3>
+
+      <!-- Playing Dice -->
+      <div class="dice-box hidden">
+        <div class="player-info">
+          <div class="player">
+            <p class="player--name player--name-0">Janoh</p>
+            <p class="player--score">
+              Points: <span class="score score--0">10</span>
+            </p>
+            <img src="dice-6.png" alt="" class="img--0 img" />
+          </div>
+          <div class="player">
+            <p class="player--name player--name-1">Janoh</p>
+            <p class="player--score">
+              Points: <span class="score score--1">0</span>
+            </p>
+            <img src="dice-1.png" alt="" class="img--1 img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Forms  -->
+      <div class="form hidden">
+        <div class="form-group">
+          <label for="name--0">Your name</label>
+          <input
+            type="text"
+            id="name--0"
+            class="form-input"
+            placeholder="enter name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="name--1">Your opponent</label>
+          <input
+            type="text"
+            id="name--1"
+            class="form-input"
+            placeholder="enter name"
+          />
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-box">
+        <button class="btn btn--friend">friend</button>
+        <button class="btn btn--opponent">computer</button>
+        <button class="btn btn--start hidden">start game</button>
+        <button class="btn btn--play hidden">play</button>
+        <button class="btn btn--playAgain hidden">play again</button>
+        <button class="btn btn--restart hidden">restart</button>
+      </div>
+    </main>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>

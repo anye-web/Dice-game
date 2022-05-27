@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@700&family=Tangerine&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #ff0069;
+  --tint-primary-color: #e6005f;
+  --white-color: #fff;
+  --dark-color: #000;
+}
+::selection {
+  color: var(--white-color);
+  background: var(--primary-color);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Quintessential", cursive;
+  font-size: 2rem;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+h1,
+h2,
+.heading-winner {
+  font-family: "Tangerine", cursive;
+  text-align: center;
+}
+
+nav {
+  padding: 2rem 0 0 2rem;
+}
+.logo {
+  height: 4rem;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+
+  height: 100vh;
+}
+
+.heading-primary {
+  color: var(--primary-color);
+  font-size: 9rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.heading-winner {
+  color: var(--primary-color);
+  font-size: 7rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.heading-secondary {
+  font-size: 4.8rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 5rem;
+  text-transform: capitalize;
+  color: var(--white-color);
+  font-size: 3rem;
+  text-align: center;
+
+  font-family: inherit;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border: none;
+  border-bottom: 5px solid transparent;
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+}
+.btn.btn--play {
+  margin-left: -2rem;
+}
+
+.btn:hover {
+  background-color: var(--tint-primary-color);
+  border-color: var(--white-color);
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+.form-group label {
+  display: block;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.form-group .form-input {
+  padding: 1.5rem 2rem;
+  border: none;
+  background-color: var(--white-color);
+  font-family: inherit;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+}
+
+.form-group .form-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(255, 0, 106, 0.5);
+}
+
+.player--name {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+.score {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  font-family: "Roboto", sans-serif;
+}
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  align-self: center;
+  text-align: center;
+}
+.player-info .img {
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+}
+.animate {
+  animation: animate 0.5s ease;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.clr-primary {
+  color: var(--primary-color);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Media Query */
+@media (max-width: 32em) {
+  html {
+    font-size: 50%;
+  }
+  .btn.btn--play {
+    margin-left: 0;
+  }
+  .player-info {
+    gap: 10rem;
+  }
+}
